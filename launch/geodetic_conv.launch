@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>	
+    <node respawn="true" pkg="geodetic_conv" type="geodetic_conv_node" name="geodetic_conv_node">
+        <rosparam file="$(find geodetic_conv)/cfg/geodetic_conv_params.yaml" command="load"/>
+    </node>
+</launch>
